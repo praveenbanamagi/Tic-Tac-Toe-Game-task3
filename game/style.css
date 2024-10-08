@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(143, 209, 79);
+}
+
+.game-container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.board div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    background-color: RED;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.board div:hover {
+    background-color: #e0e0e0;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#gameStatus {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
